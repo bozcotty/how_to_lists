@@ -1,4 +1,12 @@
 <h1>List: <%= @list.title %></h1>
+<h2>Steps:</h2>
+<ul>
+  <%= @list.steps.each do |step| %>
+  <li><%= step.item %></li>
+  <% end %>
+</ul>
+<p><%= link_to 'Create a Step', new_list_step_path(@list) %></p>
+
 <%= link_to 'Back to List Index', lists_path %> |
  |
 <%= link_to "Edit", edit_list_path %> |
