@@ -2,7 +2,7 @@
 
 <% @lists.each do |list| %>
   <div>
-    - <%= list.title %>
+    - <%= list.title %> -
     <%= link_to "Show", list %>
     <%= link_to "Edit", edit_list_path(list) %> |
     <%= link_to "Delete", list, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -10,7 +10,8 @@
 <% end %>
 <br>
 <div>
-  ______________________<br>
+  ______________________
+<br>
   <%= link_to 'Home', welcome_index_path %> |
   <%= link_to 'New How-To List', new_list_path %>
 </div>
