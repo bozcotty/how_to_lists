@@ -1,8 +1,8 @@
 <h1>List: <%= @list.title %></h1>
 <h2>Steps:</h2>
 <ul>
-  <%= @list.steps.each do |step| %>
-  <li><%= step.item %> -
+  <% @list.steps.each do |step| %>
+  <li><%= step.name %> -
     <%= link_to 'Show', list_step_path(@list, step) %> |
     <%= link_to 'Edit', edit_list_step_path(@list, step) %> |
     <%= link_to 'Delete', list_step_path(@list, step), method: :delete, data: { confirm: 'Are you sure?'} %>

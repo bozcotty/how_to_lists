@@ -1,3 +1,3 @@
-<h1> Showing Step: <%= @step.item %></h1>
+<h1> Showing Step: <%= @step.name %></h1>
 <%= link_to 'Back to List', @list %> |
 <%= link_to 'Delete This Step', [@list, @step], method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -1,5 +1,5 @@
 class Step < ActiveRecord::Base
   belongs_to :list
 
-  validates :item, presence: true
+  validates :name, presence: true
 end

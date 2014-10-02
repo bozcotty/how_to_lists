@@ -1,7 +1,7 @@
 class CreateSteps < ActiveRecord::Migration
   def change
     create_table :steps do |t|
-      t.string :item
+      t.string :name
       t.references :list, index: true
 
       t.timestamps

@@ -49,6 +49,6 @@ class StepsController < ApplicationController
   end
 
   def step_params
-    params.require(:step).permit(:item)
+    params.require(:step).permit(:name)
   end
 end

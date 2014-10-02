@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20141002060803) do
   end
 
   create_table "steps", force: true do |t|
-    t.string   "item"
+    t.string   "name"
     t.integer  "list_id"
     t.datetime "created_at"
     t.datetime "updated_at"
